@@ -25,7 +25,7 @@ The project is built as a **software/hardware co-design**: Python owns the numer
 
 **ROI selection and RTL validation** — draw a region of interest, validate only that crop against the Verilog core:
 
-<video src="https://github.com/user-attachments/assets/3452118f-e4bd-4073-a4d0-83e683c19b03" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/4e44fcb4-1d15-4257-a595-1bd6e15e0b11" controls width="100%"></video>
 
 ---
 
@@ -37,7 +37,7 @@ The project is built as a **software/hardware co-design**: Python owns the numer
 
 **Gallery and Board Viewer** — browse run history, open the 4-panel board (Input | Python golden | RTL output | Diff map):
 
-<video src="https://github.com/user-attachments/assets/4e44fcb4-1d15-4257-a595-1bd6e15e0b11" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/3452118f-e4bd-4073-a4d0-83e683c19b03" controls width="100%"></video>
 
 ---
 
