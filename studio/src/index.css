@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: #52525b; }
+}
+
+@layer components {
+  .section-label {
+    @apply text-[10px] font-mono font-medium tracking-[0.15em] text-zinc-500 uppercase;
+  }
+
+  .kbd {
+    @apply inline-flex items-center justify-center px-1 py-0.5 text-[10px] font-mono
+           bg-zinc-800 text-zinc-400 rounded border border-zinc-700 leading-none;
+  }
+
+  /* Sidebar slide transition — used by ControlPanel and right panel in presentation mode */
+  .sidebar-panel {
+    @apply flex-shrink-0 overflow-hidden;
+    transition: width 280ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 220ms ease;
+  }
+
+  /* Run status chip */
+  .status-pass { @apply bg-pass/10 text-pass border border-pass/20; }
+  .status-fail { @apply bg-fail/10 text-fail border border-fail/20; }
+  .status-idle { @apply bg-zinc-800 text-zinc-500 border border-zinc-700; }
+  .status-running { @apply bg-warn/10 text-warn border border-warn/20; }
+
+  /* Kernel badge */
+  .kernel-badge {
+    @apply px-1.5 py-0.5 rounded text-[10px] font-mono
+           bg-zinc-800 text-zinc-400 border border-zinc-700;
+  }
+}
+
+/* Board viewer backdrop */
+.board-backdrop {
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(4px);
+}

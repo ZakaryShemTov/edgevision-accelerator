@@ -1,0 +1,46 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ── macOS ─────────────────────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+
+# ── RTL simulation build artifacts ────────────────────────────────────────
+sim/conv_sim          # iverilog compiled binary
+
+# ── Generated test vectors (reproducible via gen_test_vectors.py) ─────────
+sim/input.hex
+sim/kernel.hex
+sim/expected.hex
+sim/rtl_output.hex
+sim/meta.json
+
+# ── Generated result images (reproducible via demo.sh / run_filter.py) ────
+# Committed exceptions for README demo assets are listed below.
+results/*.png
+results/*.txt
+results/.DS_Store
+
+# ── Snapshot validation runs (large generated data, fully reproducible) ───
+results/runs/
+
+# ── Keep these committed ──────────────────────────────────────────────────
+!results/cameraman_input.png
+!results/cameraman_sobel_x_python.png
+!results/cameraman_sobel_x_comparison.png
+
+# ── Studio build artifacts ────────────────────────────────────────────────
+studio/node_modules/
+studio/dist/
+
+# ── Claude Code settings ──────────────────────────────────────────────────
+.claude/
+
+# ── Editor / IDE ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+sim/conv_sim

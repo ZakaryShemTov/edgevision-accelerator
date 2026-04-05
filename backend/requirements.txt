@@ -1,0 +1,10 @@
+# EdgeVision Studio — backend server
+#
+# Install: pip3 install -r backend/requirements.txt
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9   # required for multipart file uploads (/api/filter, /api/validate)
+Pillow>=10.0.0
+numpy>=1.24.0
+opencv-python>=4.8.0      # required by snapshot_exporter.py and validation_reporter.py

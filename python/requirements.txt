@@ -1,0 +1,17 @@
+# EdgeVision Accelerator — Python CLI tools
+#
+# Required for: golden reference, test vectors, static demo, verify,
+#               interactive preview, snapshot validation pipeline.
+#
+# Install: pip3 install -r python/requirements.txt
+
+numpy>=1.24.0
+Pillow>=10.0.0
+opencv-python>=4.8.0
+matplotlib>=3.7.0
+pytest>=7.0.0
+
+# scikit-image — optional
+# Only needed if running run_filter.py without an --image argument
+# (fallback to the scikit-image built-in cameraman). Not required when
+# using data/cameraman.png directly (the standard documented workflow).
