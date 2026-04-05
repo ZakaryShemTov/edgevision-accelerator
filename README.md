@@ -17,11 +17,33 @@ The project is built as a **software/hardware co-design**: Python owns the numer
 
 ## Demo
 
-Sobel X edge detection on the standard cameraman image, computed by the Python golden reference and verified byte-for-byte against the RTL simulation:
+**EdgeVision Studio** — ROI selection active, Sobel Y kernel, split view, validation PASS, run gallery:
 
-| Input | Python golden (Sobel X) | RTL output |
-|:-----:|:------------------------:|:----------:|
-| ![input](results/cameraman_input.png) | ![python](results/cameraman_sobel_x_python.png) | identical ✓ |
+![EdgeVision Studio — ROI + split view](assets/github/studio_roi_split.png)
+
+---
+
+**Kernel switching and RTL validation** — select a source, switch kernels, run filter, trigger RTL simulation:
+
+<video src="assets/github/demo_kernels.mp4" controls width="100%"></video>
+
+---
+
+**ROI selection and RTL validation** — draw a region of interest, validate only that crop against the Verilog core:
+
+<video src="assets/github/demo_roi.mp4" controls width="100%"></video>
+
+---
+
+**Gallery and Board Viewer** — browse run history, open the 4-panel board (Input | Python golden | RTL output | Diff map):
+
+<video src="assets/github/demo_gallery.mp4" controls width="100%"></video>
+
+---
+
+**Validation artifact** — Sobel Y on a cropped ROI. Python golden and RTL output are pixel-identical. Diff map is flat gray (zero mismatches):
+
+![Validation board — Sobel Y ROI](assets/github/board_sobel_y_roi.png)
 
 **Python oracle: 14/14 unit tests pass. RTL simulation: ALL PASS across all kernels and image sizes.**
 

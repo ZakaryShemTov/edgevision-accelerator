@@ -36,6 +36,9 @@ results/runs/
 studio/node_modules/
 studio/dist/
 
+# ── Demo recordings and raw screenshots (too large for GitHub) ────────────
+assets/demos/
+
 # ── Claude Code settings ──────────────────────────────────────────────────
 .claude/
 
