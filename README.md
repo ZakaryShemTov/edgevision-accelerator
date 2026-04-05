@@ -25,19 +25,19 @@ The project is built as a **software/hardware co-design**: Python owns the numer
 
 **Kernel switching and RTL validation** — select a source, switch kernels, run filter, trigger RTL simulation:
 
-<video src="assets/github/demo_kernels.mp4" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/c5f8baed-78be-4138-ba85-80b1754cac74" controls width="100%"></video>
 
 ---
 
 **ROI selection and RTL validation** — draw a region of interest, validate only that crop against the Verilog core:
 
-<video src="assets/github/demo_roi.mp4" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/3452118f-e4bd-4073-a4d0-83e683c19b03" controls width="100%"></video>
 
 ---
 
 **Gallery and Board Viewer** — browse run history, open the 4-panel board (Input | Python golden | RTL output | Diff map):
 
-<video src="assets/github/demo_gallery.mp4" controls width="100%"></video>
+<video src="https://github.com/user-attachments/assets/4e44fcb4-1d15-4257-a595-1bd6e15e0b11" controls width="100%"></video>
 
 ---
 
